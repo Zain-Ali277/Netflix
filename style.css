@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+
+.main {
+
+
+
+    background-image: url("assests/Images/PK-en-20241216-TRIFECTA-perspective_fdcc1a08-2116-4afa-a88b-15210264cacd_large.jpg");
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+
+}
+
+nav {
+    max-width: 62vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Martel Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    gap: 24px;
+    padding: 0 30px;
+
+}
+.hero> :first-child{
+    font-size: 56px;
+    font-family: "poopins";
+    font-weight: 900;
+    color: rgb(255, 255,255);
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-size: 56px;
+    font-weight: 900;
+    color: rgb(255, 255,255);
+    text-align: center;
+}.hero> :nth-child(3){
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255,255);
+    text-align: center;
+}.hero> :nth-child(4){
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255,255);
+    text-align: center;
+}
+.separation{
+    width: 100%;
+    height: 5px; /* Adjust height for bigger waves */
+    background: url('data:image/svg+xml,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="url(%23gradient)" d="M0,96L80,128C160,160,320,224,480,208C640,192,800,96,960,80C1120,64,1280,128,1360,160L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path><defs><linearGradient id="gradient" gradientTransform="rotate(90)"><stop offset="0%" stop-color="%23ff5733"/><stop offset="50%" stop-color="%23ffcc33"/><stop offset="100%" stop-color="%2333ff57"/></linearGradient></defs></svg>');
+    background-size: cover;
+    background-color: aqua;
+}
+             
+        
+           .btn{
+            padding: 3px 8px;
+            font-weight: 400;
+            color: white;
+            background-color:rgba(248, 243,243, 0.342);
+            border-radius: 4px;
+            border: 1px solid white;
+            cursor: pointer;
+
+           } 
+.btn-red{
+background-color: red;
+color: white;
+padding: 3px 24px;
+font-size: 20px;
+border-radius: 4px;
+font-weight: 400;
+}
+.btn-red-sm{
+background-color: red;
+color: white;
+}
+.main input{padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px;
+    /* font-weight: 900; */
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(222, 206, 206, 0.5);
+
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 16px;
+}
+.first{
+    /* display: flex;
+    justify-content: center; */
+    /* max-width: 50vw; */
+    margin: 6px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /* padding-right:13px; */
+    font-style: bold;
+    overflow: auto;
+}
+/* Container for the entire slider */
+.slider-container {
+    display: flex; /* Arranges elements (images + buttons) in a row */
+    align-items: center; /* Centers items vertically */
+    max-width: 800px; /* Limits the maximum width */
+    margin: auto; /* Centers the slider on the page */
+    overflow: hidden; /* Hides any overflowing content */
+}
+
+/* The div that holds the images */
+.secImage {
+    display: flex; /* Aligns images in a horizontal row */
+    gap: 10px; /* Adds space between images */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-behavior: smooth; /* Makes scrolling smooth */
+    scroll-snap-type: x mandatory; /* Ensures images snap into place */
+    width: 100%; /* Takes full width of the container */
+    white-space: nowrap; /* Prevents images from wrapping to the next line */
+}
+
+/* Styling for individual images */
+.secImage img {
+    width: 555px; /* Sets a fixed width for images */
+    height: auto; /* Maintains aspect ratio */
+    scroll-snap-align: start; /* Ensures images align properly when scrolling */
+    border-radius: 10px; /* Rounds the corners of images */
+}
+.container {display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: left;
+    flex-wrap: nowrap;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.cards { color: white;
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* overflow-x: auto; */
+    
+} .cards *{
+    margin: 0;
+}
+.card {
+    background: linear-gradient(135deg, #1a1a3f, #240b36);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 230px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.card p {
+    font-size: 14px;
+    color: #ccc;
+}
+.icon {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+.faqbox svg {
+    filter: invert(1);
+}
+
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+.footer-item{
+    display:flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+footer .questions {
+    padding: 34px 0;
+}
+@media (max-width: 900px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        min-width: 45%;
+    }
+}
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        min-width: 80%;
+    }
+    .secImage {
+        flex-direction: column;
+        align-items: center;
+    }
+    .secImage img {
+        width: 90%;
+    }
+}
